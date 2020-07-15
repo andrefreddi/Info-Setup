@@ -1,41 +1,35 @@
 package modelo;
 
 public class Pecas {
+
+	private int idPeca;
+	private String nomePeca;
 	
-	private int idPecas;
-	private String nomePecas;
+	public Pecas() { }
 	
-	public Pecas() {}
+	public Pecas(int idPecaInformado, String nomePecaInformado) {
+		this.idPeca = idPecaInformado;
+		this.nomePeca = nomePecaInformado;
+	}
+
+	public int getIdPeca() {
+		return idPeca;
+	}
+
+	public void setIdPeca(int idPecaInformado) {
+		this.idPeca = idPecaInformado;
+	}
+
+	public String getNomePeca() {
+		return nomePeca;
+	}
+
+	public void setNomePeca(String nomePecaInformado) {
+		this.nomePeca = nomePecaInformado;
+	}
 	
-	public Pecas(int idPecasInformado, String nomePecasInformado) {
-		super();
-		this.idPecas = idPecasInformado;
-		this.nomePecas = nomePecasInformado;
-	}
-
-
-	public int getIdPecas() {
-		return idPecas;
-	}
-
-
-	public void setIdPecas(int idPecasInformado) {
-		this.idPecas = idPecasInformado;
-	}
-
-
-	public String getNomePecas() {
-		return nomePecas;
-	}
-
-
-	public void setNomePecas(String nomePecasInformado) {
-		this.nomePecas = nomePecasInformado;
-	}
-
 	public String toString() {
-		return "Id: [ " + this.idPecas + " ].\nNome: [ " + this.nomePecas + "]. ";
+		return "ID: [ " + this.idPeca + " ].\nNome peça: [ " + this.nomePeca + " ]. ";
 	}
 	
-
 }
